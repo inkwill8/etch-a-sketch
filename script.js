@@ -7,6 +7,8 @@ function addDiv() {
     container.appendChild(newDiv);
 }
 
+// try an array
+
 // possibly will need a loop that will do this same thing 16 times for one row
     for (let i = 0; i < 16; i++) {
         addDiv();
