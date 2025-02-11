@@ -8,8 +8,18 @@ function addDiv() {
 }
 
 // possibly will need a loop that will do this same thing 16 times for one row
+   function singleRow() { 
     for (let i = 0; i < 16; i++) {
         addDiv();
+   }
+}
+// another loop that will simply replicate the one row 16 times?
+    function multipleRows() {
+        for (let i = 0; i < 16; i++) {
+            singleRow();
+        }
     }
 
-// another loop that will simply replicate the one row 16 times? 
+multipleRows();
+
+ 
