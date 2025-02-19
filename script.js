@@ -38,6 +38,9 @@ for (let box of boxes) {
 
 const btn = document.getElementById('btn');
 
+let gridSize = 0;
+
 btn.addEventListener('click', () => {
-    prompt('Please input the new grid size.');
+   gridSize = prompt('Please input the new grid size.');
 })
+
