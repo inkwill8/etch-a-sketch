@@ -33,3 +33,11 @@ function changeColor(e) {
 for (let box of boxes) {
     box.addEventListener('mouseover', changeColor)
 }
+
+// button effects
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+    prompt('Please input the new grid size.');
+})
