@@ -30,4 +30,6 @@ function changeColor() {
     box.style.backgroundColor = 'orange';
 }
 
+for (box of boxes) {
 box.addEventListener('onmouseover', changeColor())
+}
