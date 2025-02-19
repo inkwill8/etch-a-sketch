@@ -41,6 +41,8 @@ const btn = document.getElementById('btn');
 let gridSize = 0;
 
 btn.addEventListener('click', () => {
-   gridSize = prompt('Please input the new grid size.');
+    gridSize = prompt('Please input the new grid size.');
 })
+
+
 
