@@ -22,4 +22,12 @@ function addDiv() {
 
 multipleRows();
 
- 
+// hover effects
+
+const boxes = document.querySelectorAll('.container div');
+
+function changeColor() {
+    box.style.backgroundColor = 'orange';
+}
+
+box.addEventListener('onmouseover', changeColor())
