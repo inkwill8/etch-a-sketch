@@ -26,10 +26,10 @@ multipleRows();
 
 const boxes = document.querySelectorAll('.container div');
 
-function changeColor() {
-    box.style.backgroundColor = 'orange';
+function changeColor(e) {
+    e.target.style.backgroundColor = 'orange';
 }
 
-for (box of boxes) {
-box.addEventListener('onmouseover', changeColor())
+for (let box of boxes) {
+    box.addEventListener('mouseover', changeColor)
 }
