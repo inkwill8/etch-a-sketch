@@ -38,11 +38,20 @@ for (let box of boxes) {
 
 const btn = document.getElementById('btn');
 
-let gridSize = 0;
+let gridSize = 16;
 
-btn.addEventListener('click', () => {
+function getUserInput() {
     gridSize = prompt('Please input the new grid size.');
-})
+    
+    if (gridSize > 100) {
+        do {
+            gridSize = prompt('Please define a size less than 100 by 100.');
+        } while (gridSize > 100); 
+        
+    }}
+
+btn.addEventListener('click', getUserInput);
+
 
 
 
