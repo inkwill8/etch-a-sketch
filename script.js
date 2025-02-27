@@ -22,6 +22,16 @@ function addDiv() {
         }
     }
 
+    function addNewGrid() {
+        for (let box of boxes) {
+            box.remove();
+        }
+        multipleRows(gridSize);
+        for (let box of boxes) {
+            box.addEventListener('mouseover', changeColor)
+        }
+    }
+
 multipleRows(gridSize);
 
 // hover effects
@@ -49,12 +59,11 @@ function getUserInput() {
         } while (gridSize > 100); 
         
     } else {
-        container.remove();
-        let newContainer = document.createElement('div');
-        document.body.appendChild(newContainer);
-        multipleRows(gridSize);
+        addNewGrid();
     }
 }
+
+
 
 btn.addEventListener('click', getUserInput);
 
