@@ -50,6 +50,8 @@ function getUserInput() {
         
     } else {
         container.remove();
+        let newContainer = document.createElement('div');
+        document.body.appendChild(newContainer);
         multipleRows(gridSize);
     }
 }
