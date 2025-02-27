@@ -49,7 +49,7 @@ function getUserInput() {
         } while (gridSize > 100); 
         
     } else {
-        container.removeChild(div);
+        container.remove();
         multipleRows(gridSize);
     }
 }
