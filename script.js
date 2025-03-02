@@ -26,7 +26,9 @@ function addDiv() {
         for (let box of boxes) {
             box.remove();
         }
+        
         multipleRows(gridSize);
+
         for (let box of boxes) {
             box.addEventListener('mouseover', changeColor)
         }
