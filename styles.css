@@ -31,7 +31,7 @@ button {
 }
 
 .container div {
-    width: calc((100% - 30px) / 16); /* Account for 15 gaps between 16 elements */
+    width: calc((100% - 30px) / 16);
     height: calc((100% - 30px) / 16);
     border: 1px solid #f7f7f7;
 }
