@@ -29,6 +29,8 @@ function addDiv() {
         
         multipleRows(gridSize);
 
+        boxes = document.querySelectorAll('.container div');
+
         for (let box of boxes) {
             box.addEventListener('mouseover', changeColor)
         }
@@ -38,7 +40,7 @@ multipleRows(gridSize);
 
 // hover effects
 
-const boxes = document.querySelectorAll('.container div');
+let boxes = document.querySelectorAll('.container div');
 
 function changeColor(e) {
     e.target.style.backgroundColor = 'orange';
@@ -58,14 +60,13 @@ function getUserInput() {
     if (gridSize > 100) {
         do {
             gridSize = prompt('Please define a size that is 100 or less.');
-        } while (gridSize > 100); 
+        } while (gridSize > 100);
+            addNewGrid();
         
     } else {
         addNewGrid();
     }
 }
-
-
 
 btn.addEventListener('click', getUserInput);
 
