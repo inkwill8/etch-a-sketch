@@ -69,7 +69,3 @@ function getUserInput() {
 }
 
 btn.addEventListener('click', getUserInput);
-
-
-
-
